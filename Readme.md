@@ -1,16 +1,30 @@
-## ContactHub (CRM Software)
+# ContactKlub (Customer Relationship Management Software - Backend)
 
-Link: https://chat.openai.com/share/765ed09b-442c-48bc-a363-e3901c54b0af
+## How to Run ?
 
-To run the server: uvicorn main:app --reload
+To run this api in development environment:
+Step-1
+```
+pip install -r requirements.txt
+```
+Step-2
+```
+uvicorn main:app --reload
+```
 
+
+### Link: https://chat.openai.com/share/765ed09b-442c-48bc-a363-e3901c54b0af
+
+### Project Directory Structure
+
+```markdown
 project_root/
 │
 ├── app/
 │   ├── api/                    # API route definitions
 │   │   ├── __init__.py
 │   │   ├── auth.py             # Authentication routes
-│   │   ├── items.py            # Item related routes
+│   │   ├── contacts.py            # Item related routes
 │   │   └── users.py            # User related routes
 │   │
 │   ├── core/                   # Core functionality
@@ -52,3 +66,4 @@ project_root/
 ├── main.py                     # FastAPI application creation
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
+```
